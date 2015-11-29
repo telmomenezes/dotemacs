@@ -34,8 +34,7 @@
 ;;  (face-list))
 
 ;; File navigation
-(require 'ido)
-(ido-mode t)
+(load "~/.emacs.d/helm")
 
 ;; Rainbow delimiters
 (require 'rainbow-delimiters)
