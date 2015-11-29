@@ -3,6 +3,9 @@
 ;; Disable toolbar
 (tool-bar-mode -1)
 
+;; Disable scroll-bars
+(scroll-bar-mode -1)
+
 ;; env PATH
 (defun set-exec-path-from-shell-PATH ()
   (let ((path-from-shell (shell-command-to-string "$SHELL -i -c 'echo $PATH'")))
@@ -42,6 +45,9 @@
 
 ;; Flyspell often slows down editing so it's turned off
 (remove-hook 'text-mode-hook 'turn-on-flyspell)
+
+;; Python
+(elpy-enable)
 
 ;; Clojure
 (load "~/.emacs.d/clojure")

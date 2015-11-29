@@ -8,6 +8,8 @@
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (add-to-list 'package-archives
              '("SC" . "http://joseito.republika.pl/sunrise-commander/") t)
+(add-to-list 'package-archives
+             '("elpy" . "https://jorgenschaefer.github.io/packages/"))
 (package-initialize)
 
 (when (not package-archive-contents)
@@ -15,3 +17,4 @@
 
 ;; main configurations file
 (load "~/.emacs.d/user.el")
+
