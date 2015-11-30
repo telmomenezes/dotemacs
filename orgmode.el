@@ -6,6 +6,9 @@
 
 ;; Set to the location of your Org files on your local system
 (setq org-directory "~/org")
+(setq org-agenda-files (list "~/org/"))
+;; Eval to update org-agenda-files
+(add-to-list 'org-agenda-files (expand-file-name "~/org"))
 ;; Set to the name of the file where new notes will be stored
 (setq org-mobile-inbox-for-pull "~/org/flagged.org")
 ;; Set to <your Dropbox root directory>/MobileOrg.
