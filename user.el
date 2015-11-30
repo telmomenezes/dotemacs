@@ -48,6 +48,9 @@
 ;; Flyspell often slows down editing so it's turned off
 (remove-hook 'text-mode-hook 'turn-on-flyspell)
 
+;; Org-mode
+(load "~/.emacs.d/orgmode")
+
 ;; Python
 (elpy-enable)
 
