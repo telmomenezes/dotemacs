@@ -28,7 +28,14 @@
    '(default ((t (:height 120 :width normal :family "Consolas"))))))
 
 ;; Theme
-(load-theme 'leuven t)
+;; (load-theme 'leuven t)
+;; (require 'moe-theme)
+;; (moe-dark)
+(load-theme 'zenburn t)
+
+;; Powerline
+(require 'powerline)
+(powerline-default-theme)
 
 ;; disable underline/bold
 ;;(mapc
